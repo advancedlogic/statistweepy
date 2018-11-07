@@ -300,7 +300,7 @@ def hbar_plot_Splits(model, ax, adjustment = None, color = (0, 0.6, 1, 1), incol
     ax.barh(bar_pos, [splits_freq[split] for split in sorted_splits_by_freq], height = width, color = col)
 
     ax.set_yticks(ytick_pos)
-    helvetica = fm.FontProperties(fname = '/home/asus/statistweepy/fonts/HelveticaNeueBold.ttf', size = text_sizes[0])
+    helvetica = fm.FontProperties(fname = './fonts/HelveticaNeueBold.ttf', size = text_sizes[0])
     ax.set_yticklabels(sorted_splits_by_freq, rotation = 'horizontal', fontproperties = helvetica)
     ax.set_ylim([1 - width/2 - space, max(ytick_pos) + width/2 + space])
 
